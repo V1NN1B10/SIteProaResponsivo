@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(104, 195, 255, 0.489);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(21, 30, 75);
+    padding: 15px;
+
+    h1{
+        color: aliceblue;
+    }
+    .navegacao{
+        display: flex;
+        gap: 20px;
+        color: white;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+}
+/* main */
+.body1{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 60vh;
+
+
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}
+
+.bnt{
+        background-color:rgb(21, 30, 75);
+        display: flex;
+        color: aliceblue;
+        padding: 15px;
+        border-radius: 10px;
+        width: 200px;
+        margin-top: 30px;
+        justify-content: center;
+        transition: backgroud-color 0.3s;
+    }
+
+.bnt:hover{
+        background-color:rgb(3, 58, 105);
+        color: rgb(253, 253, 253);
+    }
+
+.participar{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 40px;
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 45px;
+        border-radius: 20px;
+        color: rgb(0, 0, 0);
+        border: 2px solid;
+        box-shadow: 30px;
+    }
+    h2{
+        margin-top:20px ;
+    }
+
+    h3{
+        margin-top: -25px;
+    }
+
+    p{
+       margin-top: 25px;
+    }
+}
+footer{
+    background-color:rgb(21, 30, 75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 0px;
+
+    h2{
+        color: white;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    header .navegacao {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Conteúdo principal */
+    .body1 {
+        margin: 80px 20px;
+        text-align: center;
+    }
+
+    .body1 h1 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .body1 p {
+        font-size: 16px;
+    }
+
+    /* Seção dos cards */
+    .participar {
+        margin-top: 0;
+        padding: 30px 15px;
+    }
+
+    .participar .cards {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .participar .card {
+        width: 100%;
+        max-width: 350px;
+        padding: 30px 20px;
+    }
+
+    /* Rodapé */
+    footer h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+}
